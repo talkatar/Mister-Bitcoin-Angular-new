@@ -16,7 +16,6 @@ footer {
   @include for-mobile-layout {
     footer {
     font-size: 1rem;
-    padding-block-start: rem(16px);
-  
-  }
+    padding-block-start: 1.9rem
+    }
   }

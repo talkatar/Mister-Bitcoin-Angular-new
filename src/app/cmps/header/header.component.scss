@@ -2,7 +2,8 @@
 
 .header {
     border-bottom: 3px solid rgb(50 52 52 / 8%);
-    
+    height: 15vh;
+
     .logo-container {
       font-size: 2rem;
       align-items: center;
@@ -10,8 +11,8 @@
   
       div {
         margin-inline-start: rem(10px);
-  
       }
+      
     }
   
     img {
@@ -27,27 +28,35 @@
   
     nav {
       margin-inline-end: rem(50px);
-      gap: rem(40px)
+      gap: rem(40px);
+      align-items: center;
+    }
+
+    .active {
+      color: darkred;
+  }
+  }
+  
+  @include for-mobile-layout {
+  .header{
+    .logo-container {
+      font-size: 1.5rem;
+    }
+  
+    .logo-img {
+      width: rem(40px);
+      height: rem(40px);
+    }
+    .logo{
+      font-size: 1rem;
+
+    }
+      nav {
+        img{
+          height: rem(40px);
+          width: rem(40px);    
+        } 
     }
   }
   
-//   @include for-mobile-layout {
-//   .header{
-//     .logo-container {
-//       font-size: 1.5rem;
-//     }
-  
-//     .logo-img {
-//       width: rem(40px);
-//       height: rem(40px);
-//     }
-//       nav {
-//         img{
-//           height: rem(40px);
-//           width: rem(40px);
-    
-//         } 
-//     }
-//   }
-  
-//   }
+  }

@@ -1,0 +1,16 @@
+
+<section class="statistics">
+  <div class="btns-container flex">
+    <button class="btn-statistics" mat-raised-button (click)="display = marketPriceStr">
+      Market price
+    </button>
+    <button class="btn-statistics" mat-raised-button (click)="display = tradeVolumeStr">
+      Trade Volume
+    </button>
+  </div>
+
+  <ng-container [ngSwitch]="display">
+    <chart *ngSwitchCase="marketPriceStr" [chartData]="marketPrice$ | async"></chart>
+    <chart *ngSwitchCase="tradeVolumeStr" [chartData]="tradeVolume$ | async"></chart>
+  </ng-container>
+</section>

@@ -1,0 +1,12 @@
+<section class="contact-index">
+
+    <div class=" options flex">
+        <contact-filter></contact-filter>
+        <a routerLink="/contact/edit"><button class="btn-add" mat-raised-button >Add Contact</button></a>
+
+    </div>
+
+    <contact-list (remove)="onRemoveContact($event)" [contacts]="contacts$ | async" ></contact-list>
+</section>
+
+<router-outlet></router-outlet>

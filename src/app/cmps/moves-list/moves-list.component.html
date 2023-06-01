@@ -1,0 +1,11 @@
+<section class="moves">
+    <h1 *ngIf="moves && moves.length === 0">No moves yet</h1>
+    <div class="moves-list" *ngIf="moves && moves.length > 0">
+      <h2>{{ moves && moves.length === 3 ? 'Your last 3 moves' : 'Your moves' }}</h2>
+      <div *ngFor="let move of moves" class="move">
+        <p>Amount: {{ move.amount }}</p>
+        <p>To: {{ move.to }}</p>
+        <p>Date: {{ move.at }}</p>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,9 @@
+<section class="transfer">
+<h1 class='transfer-title'>Transfer funds to: {{contact?.name}}</h1>
+<form (ngSubmit)="onHandleTransfer()">
+    <label for="name">Amount: </label>
+    <input class="input-transfer" [(ngModel)]="coins" type="number" name="name" id="name"  max={{maxCoins}} value={{coins}}
+    min=0 >
+    <button  class="btn-transfer" mat-raised-button>Transfer</button>
+  </form>
+</section>

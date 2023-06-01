@@ -1,0 +1,51 @@
+@import "../../../app/app-root/app.component.scss";
+
+.sign-up {
+    text-align: center;
+
+    .sign-up-title {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .input-login {
+        height: 30px;
+    }
+
+    .error-message {
+        color: red;
+        margin-inline-start: -2.5rem;
+    }
+
+    .btn-login {
+        margin-inline-start: rem(30px);
+        height: 30px;
+    }
+
+    .logo-img {
+        margin-block-start: rem(30px);
+        margin-block-end: rem(30px);
+
+        img {
+            height: rem(280px);
+            width: rem(280px);
+        }
+    }
+
+    h4 {
+        margin-block-start: rem(10px);
+        margin-block-end: rem(10px);
+    }
+}
+
+
+@include for-mobile-layout {
+    .sign-up {}
+
+    .logo-img {
+        img {
+            height: rem(180px);
+            width: rem(180px);
+        }
+    }
+}

@@ -1,0 +1,17 @@
+<section class="sign-up">
+    <div class="sign-up-title"> Sign up</div>
+    <div class="logo-img"><img src='assets/img/logo.png'/></div>
+    <h4 > The user was not found</h4>
+    <h4 > Please sign up</h4>
+ 
+    <form [formGroup]="loginForm" (ngSubmit)="handleSubmit()">
+        <label for="name">Name: </label>
+        <input class="input-login" formControlName="userName" type="text" name="name" id="name">
+        <button class="btn-login" mat-raised-button>Sign up</button>
+        <div  *ngIf="loginForm.get('userName')?.invalid && (loginForm.get('userName')?.dirty || loginForm.get('userName')?.touched)" class="error-message">
+          Name is required.
+        </div>
+      </form>
+      
+</section>
+

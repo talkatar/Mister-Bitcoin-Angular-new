@@ -1,0 +1,15 @@
+<section *ngIf="(contact$ | async) as contact" class="contact-details">
+    <p><b>Name:</b> {{contact.name}}</p>
+    <p><b>Age:</b> {{contact.email}}</p>
+    <p><b>phone:</b> {{contact.phone}}</p>
+    <img src="https://robohash.org/set_set5/bgset_bg1/{{contact._id}}?size=300x300" alt="">
+
+    <transfer-funds [contact]="contact" [maxCoins]="loggedInUser?.coins ?? 0"
+        (onTransferCoins)="onTransferCoins($event)"></transfer-funds>
+    <moves-list [moves]="moves" [loggedInUser]="loggedInUser"></moves-list>
+
+    <section class="actions">
+        <button mat-raised-button class="btn-back" (click)="onBack()">Back</button>
+    </section>
+
+</section>

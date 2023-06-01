@@ -1,0 +1,38 @@
+<section class="home-page">
+  <section *ngIf="!loggedInUser || !loggedInUser.name">
+    <div class='welcome'>Welcome to Mister Bitcoin!</div>
+    <div class="logo-img"><img src='assets/img/logo.png' /></div>
+    <h2>Please log in</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onLogIn()">
+      <label for="name">Name: </label>
+      <input class="input-login" formControlName="userName" type="text" name="name" id="name">
+      <button class="btn-login" mat-raised-button>Log in</button>
+      <div
+        *ngIf="loginForm.get('userName')?.invalid && (loginForm.get('userName')?.dirty || loginForm.get('userName')?.touched)"
+        class="error-message">
+        Name is required.
+      </div>
+    </form>
+  </section>
+
+  <section *ngIf="loggedInUser && loggedInUser.name">
+    <h1 class='user-welcome'>Hello {{ loggedInUser.name }}</h1>
+    <div class="logo-img"><img src='assets/img/logo.png' /></div>
+
+
+    <div class="coins-info flex ">
+      <img src='assets/img/coins.png' />
+      <div>Coins: {{ loggedInUser.coins }}</div>
+    </div>
+
+    <div class="bitcoin-info flex ">
+      <img src='assets/img/bitcoin.png' />
+      <div>BTC:{{ rate$ | async }} </div>
+    </div>
+
+    <button class="btn-logout" mat-raised-button (click)="onLogOut()">Log Out</button>
+    <moves-list [moves]="moves" [loggedInUser]="loggedInUser"></moves-list>
+
+  </section>
+
+</section>

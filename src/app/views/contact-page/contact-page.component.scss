@@ -1,0 +1,35 @@
+@import "../../../app/app-root/app.component.scss";
+
+
+.contact-index {
+    grid-template-rows: 10% 90%;
+    place-items: center;
+    gap: 1em;
+
+    .options {
+        align-content: center;
+        justify-content: center;
+        gap: rem(30px);
+        margin-block-start: rem(30px);
+        margin-block-end: rem(30px);
+
+        .btn-add {
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            border: 1px solid #ccc;
+        }
+
+    }
+
+    @include for-mobile-layout {
+        .options {
+            gap: rem(10px);
+            flex-direction: column;
+
+            a {
+                text-align: center;
+            }
+        }
+    }
+}

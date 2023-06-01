@@ -1,0 +1,16 @@
+<section class="contact-preview">
+    <section class="info">
+
+        <a routerLink="/contact/{{contact._id}}" class="data">
+            <img src="https://robohash.org/set_set5/bgset_bg1/{{contact._id}}?size=300x300" alt="">
+            <h2>{{contact.name}}</h2>
+        </a>
+
+        <section class="actions">
+            <button mat-raised-button color="warn" class="delete-btn" (click)="onRemoveContact()">Delete</button>
+            <a [routerLink]="['/contact/edit',  contact._id]"><button class="edit-btn" mat-raised-button>Edit</button></a>
+        </section>
+
+    </section>
+
+</section>

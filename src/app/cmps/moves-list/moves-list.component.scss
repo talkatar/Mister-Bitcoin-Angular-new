@@ -1,0 +1,42 @@
+@import "../../../app/app-root/app.component.scss";
+.moves{
+
+    h1{
+        font-size:rem(20px) ;
+        margin-block-start: rem(10px);
+        margin-block-end: rem(10px);
+        margin-inline-start: rem(32px);
+
+    }
+
+    .moves-list {
+        text-align: center;
+        margin-block-start: rem(40px);
+        background-color: $clr7;
+        border-radius: 8px;
+    
+        h2 {
+            padding-block-start: rem(20px);
+            margin-block-end: rem(20px);
+        }
+    
+        .move {
+            border-top: 1px solid $clr8;
+    
+            p:first-child {
+                padding-block-start: rem(10px);
+            }
+    
+            p {
+                padding-block-end: rem(5px);
+                font-size: 1.2rem;
+            }
+    
+            p:last-child {
+                padding-block-end: rem(10px);
+    
+            }
+        }
+    }
+
+}

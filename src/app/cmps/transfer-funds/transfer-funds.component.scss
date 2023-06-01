@@ -1,0 +1,18 @@
+@import "../../../app/app-root/app.component.scss";
+
+.transfer{
+    .transfer-title{
+        font-size:rem(20px) ;
+        font-weight: 700;
+        padding-block-start:rem(0px) ;
+        padding-block-end:rem(10px) ;
+    }
+    
+    .input-transfer,.btn-transfer{
+        height:rem(30px) ;
+    }
+    .btn-transfer{
+        margin-inline-start:rem(10px) ;
+    
+    }
+}

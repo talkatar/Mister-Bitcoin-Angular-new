@@ -1,0 +1,18 @@
+@import "../../../app/app-root/app.component.scss";
+
+
+:host {
+    .chart-container {
+      display: block;
+      width: 100%;
+      canvas{
+      }
+    }
+    
+
+    
+    @media (max-width: 700px) {
+      height: 100%;
+    }
+  }
+  

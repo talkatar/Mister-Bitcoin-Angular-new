@@ -1,0 +1,61 @@
+@import "../../../app/app-root/app.component.scss";
+
+
+.home-page {
+    text-align: center;
+
+    .welcome {
+        text-align: center;
+        font-size: 3.5rem;
+        margin-block-start: rem(30px);
+    }
+    .user-welcome{
+        font-size: 2.5rem;
+        margin-block-start: rem(30px);
+    }
+
+    .logo-img {
+        text-align: center;
+        margin-block-start: rem(30px);
+        margin-block-end: rem(30px);
+    }
+
+    .input-login {
+        height: 30px;
+    }
+    .error-message{
+        color: red;
+        margin-inline-start: -2.5rem;
+    }
+
+    .btn-login {
+        margin-inline-start: rem(30px);
+        height: 30px;
+    }
+
+    h2 {
+        margin-block-start: rem(30px);
+        margin-block-end: rem(30px);
+    }
+
+    .bitcoin-info {
+        margin-inline-start: 1.9rem;
+    }
+    .btn-logout{
+        margin-inline-start: 1.9rem;
+    }
+    .moves{
+        font-size:rem(20px) ;
+        margin-inline-start: 1.9rem;
+
+    }
+
+    .coins-info,
+    .bitcoin-info {
+        display: flex;
+        justify-content: center;
+        gap: rem(10px);
+        margin-block-end: rem(10px);
+    }
+
+}

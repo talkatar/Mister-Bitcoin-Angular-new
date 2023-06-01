@@ -1,0 +1,56 @@
+@import "../../../app/app-root/app.component.scss";
+
+
+.contact-preview {
+    background: #03a9f414;
+    box-shadow: 0 0 11px #0000002b;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+
+    .info {
+        padding: rem(10px);
+        // flex-grow: 1;
+    }
+
+    div{
+        text-align: center;
+    }
+
+    img {
+        margin-block-start: rem(20px);
+        border-radius: 50%;
+    }
+
+    h2 {
+        text-align: center;
+        padding-block-start: 0.5rem;
+        padding-block-end: 0.5rem;
+
+        font-size: 1.5rem;
+    }
+
+   
+
+    .actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // flex-basis: 25%;
+        padding: rem(10px);
+        transform: translateY(130%);
+        transition: transform 0.2s;
+        background-color: rgba(165, 224, 241, 0.79);
+        .delete-btn,
+        .edit-btn {
+            background-color: #67a0f1;
+            color: $white;
+        }
+    }
+
+    &:hover .actions {
+        transform: translateY(0%);
+
+    }
+}

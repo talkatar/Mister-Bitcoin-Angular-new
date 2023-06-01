@@ -1,0 +1,4 @@
+<form class="pet-filter">
+    <input class="custom-input"  [(ngModel)]="contactFilter.name" (ngModelChange)="onSetFilter($event)" name="name" placeholder="Search by name" />
+    <input class="custom-input"  [(ngModel)]="contactFilter.phone" (ngModelChange)="onSetFilter($event)" name="phone" placeholder="Search by phone" />
+</form>

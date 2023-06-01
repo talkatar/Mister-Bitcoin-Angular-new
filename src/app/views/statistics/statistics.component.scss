@@ -1,0 +1,28 @@
+@import "../../../app/app-root/app.component.scss";
+
+.statistics{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 75vh;
+
+chart{
+    flex: 1;
+    width: 90vw;
+    margin-inline-start: 5vw;
+    text-align: center;
+}
+.btns-container{
+    align-content: center;
+    justify-content: center;
+    gap: rem(50px);
+    margin-block-start: rem(20px);
+    margin-block-end: rem(20px);
+
+}
+.btn-statistics{
+    font-weight: 500;
+    
+}
+}
+

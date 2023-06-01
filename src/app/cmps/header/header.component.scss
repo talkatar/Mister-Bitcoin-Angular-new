@@ -1,0 +1,53 @@
+@import "../../../app/app-root/app.component.scss";
+
+.header {
+    border-bottom: 3px solid rgb(50 52 52 / 8%);
+    
+    .logo-container {
+      font-size: 2rem;
+      align-items: center;
+      margin-inline-start: rem(10px);
+  
+      div {
+        margin-inline-start: rem(10px);
+  
+      }
+    }
+  
+    img {
+      cursor: pointer;
+      margin-block-start: rem(10px);
+      margin-block-end: rem(10px);
+    }
+  
+    .logo-img {
+      width: rem(64px);
+      height: rem(64px);
+    }
+  
+    nav {
+      margin-inline-end: rem(50px);
+      gap: rem(40px)
+    }
+  }
+  
+//   @include for-mobile-layout {
+//   .header{
+//     .logo-container {
+//       font-size: 1.5rem;
+//     }
+  
+//     .logo-img {
+//       width: rem(40px);
+//       height: rem(40px);
+//     }
+//       nav {
+//         img{
+//           height: rem(40px);
+//           width: rem(40px);
+    
+//         } 
+//     }
+//   }
+  
+//   }

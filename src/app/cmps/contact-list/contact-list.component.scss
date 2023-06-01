@@ -1,0 +1,4 @@
+@import "../../../app/app-root/app.component.scss";
+.contact-list  {
+    grid-auto-rows: minmax(rem(200px), auto);
+}

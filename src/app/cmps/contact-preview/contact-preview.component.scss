@@ -11,10 +11,9 @@
 
     .info {
         padding: rem(10px);
-        // flex-grow: 1;
     }
 
-    div{
+    .contact-img {
         text-align: center;
     }
 
@@ -27,21 +26,18 @@
         text-align: center;
         padding-block-start: 0.5rem;
         padding-block-end: 0.5rem;
-
         font-size: 1.5rem;
     }
-
-   
 
     .actions {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // flex-basis: 25%;
         padding: rem(10px);
         transform: translateY(130%);
         transition: transform 0.2s;
         background-color: rgba(165, 224, 241, 0.79);
+
         .delete-btn,
         .edit-btn {
             background-color: #67a0f1;
@@ -51,6 +47,5 @@
 
     &:hover .actions {
         transform: translateY(0%);
-
     }
 }

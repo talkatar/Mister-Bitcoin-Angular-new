@@ -11,8 +11,8 @@
   
       div {
         margin-inline-start: rem(10px);
-  
       }
+      
     }
   
     img {
@@ -28,7 +28,8 @@
   
     nav {
       margin-inline-end: rem(50px);
-      gap: rem(40px)
+      gap: rem(40px);
+      align-items: center;
     }
 
     .active {
@@ -45,6 +46,10 @@
     .logo-img {
       width: rem(40px);
       height: rem(40px);
+    }
+    .logo{
+      font-size: 1rem;
+
     }
       nav {
         img{

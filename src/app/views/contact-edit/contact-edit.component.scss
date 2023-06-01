@@ -31,3 +31,10 @@
         }
     }
 }
+@include for-mobile-layout {
+    .contact-edit {
+        height: 60vh;
+        width: 60vw;
+    }
+}
+

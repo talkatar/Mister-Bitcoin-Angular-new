@@ -6,6 +6,7 @@
     .sign-up-title {
         text-align: center;
         font-size: 3rem;
+        margin-block-start: rem(30px);
     }
 
     .input-login {
@@ -43,13 +44,13 @@
         .logo-img {
             margin-block-end: 2.875rem;
         }
-       
+        h4{
+            margin-block-end: rem(60px);
+        }
     }
     img {
         height: rem(180px);
         width: rem(180px);
     }
-    h4{
-        margin-block-end: 29px;
-    }
+    
 }

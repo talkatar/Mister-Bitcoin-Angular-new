@@ -66,6 +66,7 @@
 
 @include for-mobile-layout {
     .home-page {
+        min-height: 71vh;
         .welcome {
             font-size: 2rem;
         }

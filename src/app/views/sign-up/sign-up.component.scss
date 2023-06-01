@@ -41,7 +41,7 @@
 
 @include for-mobile-layout {
     .sign-up {
-
+        min-height: 71vh;
         .logo-img {
             margin-block-end: 2.875rem;
         }
